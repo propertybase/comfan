@@ -20,17 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
+To get access to the functions require the gem with `require 'comfan'`
+
 ### api_id
 
 This method returns a API ID for the input ID. If the input already is an API (length >= 18 character), the same ID is returned.
 
 Otherwise the API ID is calculated
 
+~~~ ruby
+Comfan.api_id '0D50000000IehZ' # 00D50000000IehZEAS
+~~~
+
 ### ui_id
 
 This is method converts an API ID to an UI ID. If an UI ID is provided (length <= 15 characters), the same ID is returned.
 
 Otherwise the UI ID is calculated
+
+~~~ ruby
+Comfan.api_id '00D50000000IehZEAS' # 0D50000000IehZ
+~~~
 
 ## Contributing
 
