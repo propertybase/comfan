@@ -15,6 +15,10 @@ describe Comfan do
       output = '752S00000000KtkIAE'
       expect(subject.api_id(input)).to eq(output)
     end
+
+    it 'returns nil for nil input' do
+      expect(subject.api_id(nil)).to be_nil
+    end
   end
 
   describe '.ui_id' do
@@ -27,6 +31,10 @@ describe Comfan do
       input = '752S00000000KtkIAE'
       output = '752S00000000Ktk'
       expect(subject.ui_id(input)).to eq(output)
+    end
+
+    it 'returns nil for nil input' do
+      expect(subject.ui_id(nil)).to be_nil
     end
   end
 end
