@@ -1,6 +1,8 @@
 # Comfan
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/propertybase/comfan.png?branch=master)](https://travis-ci.org/propertybase/comfan) [![Coverage Status](https://coveralls.io/repos/propertybase/comfan/badge.png?branch=master)](https://coveralls.io/r/propertybase/comfan) [![Code Climate](https://codeclimate.com/github/propertybase/comfan.png)](https://codeclimate.com/github/propertybase/comfan) [![Dependency Status](https://gemnasium.com/propertybase/comfan.png)](https://gemnasium.com/propertybase/comfan) [![Gem Version](https://badge.fury.io/rb/comfan.png)](http://badge.fury.io/rb/comfan)
+
+Named after a [tool used in the Star Wars universe](http://starwars.wikia.com/wiki/Comfan), this tool provides simple helper methods for ruby to provide functionality used in Salesforce.
 
 ## Installation
 
@@ -18,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### api_id
+
+This method returns a API ID for the input ID. If the input already is an API (length >= 18 character), the same ID is returned.
+
+Otherwise the API ID is calculated
+
+### ui_id
+
+This is method converts an API ID to an UI ID. If an UI ID is provided (length <= 15 characters), the same ID is returned.
+
+Otherwise the UI ID is calculated
 
 ## Contributing
 
