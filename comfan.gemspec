@@ -6,8 +6,8 @@ require 'comfan/version'
 Gem::Specification.new do |spec|
   spec.name          = 'comfan'
   spec.version       = Comfan::VERSION
-  spec.authors       = ['Leif Gensert']
-  spec.email         = ['leif@propertybase.com']
+  spec.authors       = ['Leif Gensert', 'Thomas Rudlph']
+  spec.email         = ['leif@propertybase.com', 'thomas@propertybase.com']
   spec.description   = %q{This tool provides simple helper methods for ruby to provide functionality used in Salesforce}
   spec.summary       = %q{Ruby Helper Tools for Salesforce functionality}
   spec.homepage      = 'https://github.com/propertybase/comfan'
