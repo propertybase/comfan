@@ -39,7 +39,7 @@ This is method converts an API ID to an UI ID. If an UI ID is provided (length <
 Otherwise the UI ID is calculated
 
 ~~~ ruby
-Comfan.api_id '00D50000000IehZEAS' # 0D50000000IehZ
+Comfan.ui_id '00D50000000IehZEAS' # 0D50000000IehZ
 ~~~
 
 ## Contributing
