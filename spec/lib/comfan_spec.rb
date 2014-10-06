@@ -19,6 +19,11 @@ describe Comfan do
     it 'returns nil for nil input' do
       expect(subject.api_id(nil)).to be_nil
     end
+
+    it 'returns same ID if too short' do
+      input = '752S00000000'
+      expect(subject.api_id(input)).to eq(input)
+    end
   end
 
   describe '.ui_id' do

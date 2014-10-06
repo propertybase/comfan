@@ -4,9 +4,9 @@ module Comfan
   extend self
 
   def api_id input_id
-    return input_id if input_id.nil? || input_id.length >= 18
+    return input_id if input_id.nil? || input_id.length != 15
     suffix = ''
- 
+
     3.times do |i|
       flags = 0
       5.times do |j|
@@ -21,7 +21,7 @@ module Comfan
   end
 
   def ui_id input_id
-    return input_id if input_id.nil? || input_id.length <= 15
+    return input_id if input_id.nil? || input_id.length != 18
 
     input_id[0..-4]
   end
