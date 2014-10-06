@@ -2,7 +2,7 @@
 require "spec_helper"
 
 describe Comfan do
-  subject { Comfan }
+  subject { described_class }
 
   describe ".api_id" do
     it "returns the same ID for API ID" do
